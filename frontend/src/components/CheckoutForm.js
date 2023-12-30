@@ -55,4 +55,3 @@ const CheckoutForm = ({ setOpen, addCredits }) => {
     );
 }
 export default connect(null, { addCredits })(CheckoutForm);
-// test card number 4000003560000008

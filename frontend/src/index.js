@@ -8,6 +8,9 @@ import reducers from './reducer' // as we named the file as index.js in reducer 
 import 'materialize-css/dist/css/materialize.min.css'
 import {thunk} from 'redux-thunk';
 
+import axios from 'axios'
+window.axios = axios;
+
 const store = createStore(reducers, {}, applyMiddleware(thunk));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,9 +20,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-console.log(process.env.REACT_APP_STRIPE_KEY);
-console.log(process.env.NODE_ENV);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

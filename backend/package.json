@@ -12,11 +12,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@getbrevo/brevo": "^2.0.0-beta.4",
     "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "i": "^0.3.7",
     "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.7",
+    "nodemailer-mail-tracking": "^0.7.0",
+    "npm": "^10.2.5",
     "passport": "^0.5.3",
     "passport-google-oauth20": "^2.0.0",
+    "sendgrid": "^5.2.3",
+    "sib-api-v3-sdk": "^8.5.0",
     "stripe": "^14.10.0"
   }
 }
